@@ -12,6 +12,7 @@
 		06E1C6F71F27C3E3003F7937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E1C6F51F27C3E3003F7937 /* Main.storyboard */; };
 		06E1C6F91F27C3E3003F7937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E1C6F81F27C3E3003F7937 /* Assets.xcassets */; };
 		06E1C6FC1F27C3E3003F7937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E1C6FA1F27C3E3003F7937 /* LaunchScreen.storyboard */; };
+		06E1C7221F2A4B87003F7937 /* calculator brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E1C7211F2A4B87003F7937 /* calculator brain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		06E1C6F81F27C3E3003F7937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06E1C6FB1F27C3E3003F7937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06E1C6FD1F27C3E3003F7937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06E1C7211F2A4B87003F7937 /* calculator brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "calculator brain.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				06E1C6F11F27C3E3003F7937 /* AppDelegate.swift */,
 				06E1C6F31F27C3E3003F7937 /* ViewController.swift */,
 				06E1C6F51F27C3E3003F7937 /* Main.storyboard */,
+				06E1C7211F2A4B87003F7937 /* calculator brain.swift */,
 				06E1C6F81F27C3E3003F7937 /* Assets.xcassets */,
 				06E1C6FA1F27C3E3003F7937 /* LaunchScreen.storyboard */,
 				06E1C6FD1F27C3E3003F7937 /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06E1C7221F2A4B87003F7937 /* calculator brain.swift in Sources */,
 				06E1C6F41F27C3E3003F7937 /* ViewController.swift in Sources */,
 				06E1C6F21F27C3E3003F7937 /* AppDelegate.swift in Sources */,
 			);

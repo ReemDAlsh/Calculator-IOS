@@ -10,16 +10,56 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var show: UILabel!
+    var userInMiddleOfTying = false
+ //method
+    @IBAction func touchDigit(_ sender: UIButton) {
+        let digit = sender.currentTitle!
+      
+        
+        if userInMiddleOfTying{
+            let textdisaply = show!.text!
+            show!.text = textdisaply + digit
+        }else{
+      
+        
+        show.text = digit
+        userInMiddleOfTying = true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+    
+    var showValue:Double{
+        get{return Double(show.text!)!}
+        set{show.text = String(newValue)}
+    
+    
     }
+    
+    private var b = BrainCal()
 
+    @IBAction func operations(_ sender: UIButton) {
+        if userInMiddleOfTying{
+            b.setOperand(showValue)
+            
+        }
+        
+         userInMiddleOfTying = false
+        if let ms = sender.currentTitle{
+        b.performOperation(ms)
+        
+        
+            
+    }
+        if let result = b.result{
+        showValue =   result
+        }
+    
+    
+    
+    }
+    
+    
 
 }
 
